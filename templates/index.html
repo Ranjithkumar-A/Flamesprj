@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+<title>FLAMES CALCULATOR</title>
+<style>
+body {
+  background-image: url("static/indexflame.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+</style>
+
+<body>
+     <h1 class ="w3-text-black w3-center w3-margin-top-large w3-serif w3-padding"><b>RELATION PREDICTOR</b></h1>
+<form class="w3-serif container w3-center w3-black w3-card-4 w3-mobile w3-padding w3-margin-left-large" action="{{url_for('predict')}}" method="POST" enctype = "multipart/form-data" style="width:50%;border:2px solid white; margin: auto;">
+    <h2 class="w3-text-white w3-serif">Enter The Names You Are Interested In !!</h2>
+    <hr>
+  <label class="w3-text-white w3-left"><b>Enter The First Name</b></label>
+  <input class="w3-input w3-mobile w3-border w3-hover-border-black w3-round-xlarge" name="first" type="text" placeholder="" required></p>
+  <p>      
+  <label class="w3-text-white w3-left"><b>Enter The Second Name</b></label>
+  <input class="w3-input w3-border w3-round-xlarge" name="last" type="text" placeholder="" required></p>  
+ <input  class="w3-btn w3-teal w3-hover-green " style="border:2px solid black" value="PREDICT" type="submit"></input>
+  <input class="w3-button w3-teal w3-hover-red w3-padding" style="border:2px solid black" type="reset" value="RESET">
+</form>
+<div class="container w3-center w3-card-4 w3-serfi w3-leftbar w3-text-red w3-sand w3-border-purple w3-mobile ">
+    <h3><i>{{msg}}</i></h3>
+</div>
+<div class="footer">
+   <h4 class=" w3-black w3-text-white w3-padding w3-large " style="margin-bottom: 0%;">2021<i class="fa fa-copyright w3-hover-opacity">All Rights Are Reserved By<span class="w3-text-purple"> RanjithKumar</span></i></h4>
+</div>
+</body>
+</html>
+
