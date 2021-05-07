@@ -6,6 +6,26 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
   <title>RANJITH</title>
   <style>
     body {
@@ -13,38 +33,24 @@
       background-attachment: fixed;
       background-image: url("/static/flamesindex.jpg");
     }
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      color: white;
-      text-align: center;
-    }
   </style>
 
   <body>
     <div
-      class="w3-container w3-round-xlarge w3-border-purple w3-leftbar w3-serif w3-card-4 w3-orange w3-text-black w3-display-middle w3-center w3-border w3-card-4"
+      class="w3-container w3-display-middle w3-serif w3-round-xxlarge bg-warning w3-center"
+      style="width: auto; border: 5px solid purple"
     >
       <h3 class="w3-serif">
         The Relationship Between {{name.upper()}} and {{i.upper()}} Will End In
       </h3>
       <h1 class="w3-text-teal">
         <b><i>{{relation}}!!</i></b>
-        <hr
-          style="width: 250px; border: 3px solid black; margin-left: 200px"
-          class="w3-round"
-        />
       </h1>
       <a
+        class="btn w3-right bg-primary btn-sm w3-text-white w3-round-xlarge w3-large"
         href="{{url_for('home')}}"
-        class="w3-btn w3-text-white w3-blue w3-border w3-round-xlarge w3-right"
-        ><b
-          ><i class="fa fa-hand-o-up w3-large" aria-hidden="true"></i> Try
-          Again</b
-        ></a
-      >
+        >Try Again <i class="fa fa-hand-o-up w3-large" aria-hidden="true"></i
+      ></a>
     </div>
   </body>
 </html>
